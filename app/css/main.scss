@@ -273,8 +273,9 @@ ul {
     margin-top: 0;
     margin-bottom: 10px;
     font-family: "Ment";
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
+    line-height: 1;
 }
 
 .content-box h5 {
@@ -545,7 +546,7 @@ ul {
 
 #footer {
     margin-top: 30px;
-    padding: 72px 0 15px;
+    padding: 60px 0 15px;
     border-top: 1px solid #ddd4c5;
     text-align: center;
     opacity: 0.6;
@@ -557,6 +558,10 @@ ul {
 
 #footer .contact {
     text-align: left;
+}
+
+#footer .contact > div {
+    width: 160px;
 }
 
 #footer .contact > div:first-child {
@@ -578,7 +583,7 @@ ul {
 }
 
 #footer p {
-    font-size: 12px;
+    font-size: 13px;
     color: #53524b
 }
 
