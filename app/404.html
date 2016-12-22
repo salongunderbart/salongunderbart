@@ -11,6 +11,12 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="stylesheet" href="css/main.css">
+        <script>
+            var url = location.href;
+            if (url.substr(url.length - 1) === '/') {
+                window.location = url.substr(0, url.length - 1);
+            }
+        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
