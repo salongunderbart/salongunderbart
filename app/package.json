@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gulp-save": "^1.2.1",
+    "gulp-sitemap": "^4.2.0"
+  }
+}
