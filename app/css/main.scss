@@ -323,6 +323,7 @@ ul {
 }
 
 .content-box.full .pins {
+    display: flex;
     margin: 44px auto 0;
     max-width: 480px
 }
@@ -440,28 +441,6 @@ ul {
 
 .map {
     position: relative;
-    /*background: url(/img/map-gbg.jpg) no-repeat*/
-    /*background-image: url(http://maps.googleapis.com/maps/api/staticmap?center=57.698466,+11.969052&zoom=15&scale=2&size=600x600&maptype=roadmap&format=png&visual_refresh=true);
-    background-size: 100%;*/
-}
-
-.page-template-page-sthlm-php .map {
-    background: url(/img/map-sthlm.jpg) no-repeat
-}
-
-.map-pin {
-    position: absolute;
-    top: 20%;
-    left: 186px;
-    width: 195px;
-    height: 300px;
-    padding-top: 45px;
-    background: url(/img/point-gbg.png) no-repeat;
-    text-align: center
-}
-
-.page-template-page-sthlm-php .map-pin {
-    background: url(/img/point-sthlm.png) no-repeat
 }
 
 .map-pin h3 {
@@ -532,20 +511,6 @@ ul {
 
 .treatment.header .price {
     left: -1px
-}
-
-.page-template-page-about-php .content-box p>em {
-    position: relative;
-    top: 8px;
-    font-style: normal
-}
-
-.page-template-page-about-php .content-box p>strong {
-    position: relative;
-    top: -5px;
-    font-family: 'Fromage',serif;
-    font-size: 12px;
-    font-size: 1.2rem
 }
 
 .pins a {
@@ -698,6 +663,10 @@ ul {
     .mobilemenuactive #main-nav {
         opacity: 1;
         pointer-events: initial;
+    }
+
+    .pins a {
+        margin: 0 5px 5px;
     }
 
     #main-nav ul {
