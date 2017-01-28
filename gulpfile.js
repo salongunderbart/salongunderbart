@@ -19,7 +19,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('copy', () => {
-  	return gulp.src(['app/*.html', 'app/robots.txt', 'app/apple-touch-icon.png', 'app/favicon-16x16.png', 'app/favicon-32x32.png'])
+  	return gulp.src(['app/*.html', 'app/robots.txt', 'app/apple-touch-icon.png', 'app/favicon-16x16.png', 'app/favicon-32x32.png', 'app/CNAME'])
     	.pipe(gulp.dest('./dist'));
 });
 
