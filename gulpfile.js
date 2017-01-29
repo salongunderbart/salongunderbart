@@ -52,7 +52,7 @@ gulp.task('inlinehtml', function () {
     return gulp.src('dist/*.html')
         .pipe($.save('before-sitemap'))
         .pipe($.sitemap({
-            siteUrl: 'https://salongunderbart.github.io/',
+            siteUrl: 'http://salongunderbart.se',
             getLoc: function(siteUrl, loc, entry) {
                 if (loc.endsWith('.html')) {
                     return loc.substr(0, loc.lastIndexOf('.'));
