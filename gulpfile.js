@@ -49,7 +49,7 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('inlinehtml', function () {
-    return gulp.src('dist/*.html')
+    return gulp.src(['dist/*.html', '!dist/googlefb46088d58925841.html'])
         .pipe($.save('before-sitemap'))
         .pipe($.sitemap({
             siteUrl: 'http://salongunderbart.se',
