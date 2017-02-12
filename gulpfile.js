@@ -34,7 +34,7 @@ gulp.task('styles', () => {
 gulp.task('images', () => {
 	return gulp.src('app/img/*')
 		.pipe($.imagemin({
-			optimizationLevel: 3,
+			optimizationLevel: 5,
 			progressive: true,
 			interlaced: true
 		}))
