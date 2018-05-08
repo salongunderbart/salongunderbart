@@ -28,6 +28,7 @@ gulp.task('styles', () => {
         .pipe($.sass())
         .pipe($.autoprefixer('last 2 version'))
         .pipe($.rename('main.css'))
+        .pipe($.cssnano())
         .pipe(gulp.dest('./dist/css'));
 });
 
@@ -52,7 +53,7 @@ gulp.task('inlinehtml', function () {
     return gulp.src(['dist/*.html', '!dist/googlefb46088d58925841.html'])
         .pipe($.save('before-sitemap'))
         .pipe($.sitemap({
-            siteUrl: 'http://salongunderbart.se',
+            siteUrl: 'https://salongunderbart.se',
             getLoc: function(siteUrl, loc, entry) {
                 if (loc.endsWith('.html')) {
                     return loc.substr(0, loc.lastIndexOf('.'));
