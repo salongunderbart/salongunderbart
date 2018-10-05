@@ -30,7 +30,7 @@ body {
     background: #fff;
     font-family: 'Pia',serif;
     font-size: 100%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #333;
     line-height: 1.6;
     background-color: #ffcec3;
@@ -204,15 +204,15 @@ ul {
     margin-left: 0
 }
 
-#main-nav li:nth-child(1) { min-width: 90px;}
-#main-nav li:nth-child(2) { min-width: 103px;}
+#main-nav li:nth-child(1) { min-width: 103px;}
+#main-nav li:nth-child(2) { min-width: 90px;}
 #main-nav li:nth-child(3) { min-width: 80px;}
 #main-nav li:nth-child(4) { min-width: 52px;}
 #main-nav li:nth-child(5) { min-width: 64px;}
 
 #main-nav a {
     color: #383732;
-    font-size: 12px;
+    font-size: 13px;
     font-family: "Gill Sans",sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -259,11 +259,14 @@ ul {
     background-color: #282637
 }
 
-.black-box h1 {
+.black-box h1,
+.black-box h2 {
     display: table-cell;
     color: #fef9ec;
     font-size: 20px;
     text-align: center;
+    font-family: "Fromage";
+    font-weight: 500;
     letter-spacing: 1px;
     line-height: 1.5;
     text-transform: uppercase;
@@ -305,14 +308,15 @@ ul {
     letter-spacing: -1px
 }
 
-.content-box.full h2 {
-    font-size: 21px;
-    font-size: 2.1rem;
+.content-box.full h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-size: 2.4rem;
     font-family: 'Fromage',serif;
     text-transform: uppercase;
     font-weight: 500;
     line-height: 1.614;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.1em;
 }
 
 .content-box.full h4 {
@@ -416,7 +420,7 @@ ul {
 }
 
 .offer h3 {
-    margin: 0 0 6px;
+    margin: 0 0 10px;
     color: #fffaef;
     font-family: 'Fromage',serif;
     font-size: 14px;
@@ -426,7 +430,7 @@ ul {
 
 .offer p {
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.3;
 }
 
@@ -559,12 +563,12 @@ ul {
     margin-bottom: 0;
     font-family: "Gill Sans";
     font-weight: 500;
-    font-size: 13px;
+    font-size: 16px;
     text-transform: uppercase;;
 }
 
 #footer p {
-    font-size: 13px;
+    font-size: 14px;
     color: #53524b
 }
 
@@ -581,7 +585,7 @@ ul {
 }
 
 #footer > div:last-child p {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 @media (max-width: 800px) {
@@ -605,7 +609,8 @@ ul {
     }
 
     .row {
-        margin-bottom: 10px;
+        display: block;
+        margin-bottom: 0;
     }
 
     .row.col-640 {
@@ -623,7 +628,8 @@ ul {
     }
 
     .one-two {
-        width: calc(50% - 5px);
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .row.col-800 > .one-two {
@@ -776,9 +782,9 @@ ul {
         padding-top: 44px;
     }
 
-    .content-box.full h2 {
+    .content-box.full h1 {
         margin-bottom: 20px;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .black-box {
@@ -786,15 +792,11 @@ ul {
     }
 
     .black-box h1 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
-    .offer h3 {
-        font-size: 10px;
-    }
-
-    .offer p {
-        font-size: 11px;
+    .offer {
+        min-height: 220px;
     }
 
     #treatments {
@@ -811,12 +813,19 @@ ul {
         padding: 64px 20px 15px;
     }
 
+    #footer .contact>div {
+        width: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
     #footer .contact>div:first-child {
-        margin-right: 10px;
+        margin-right: 0;
+        text-align: center;
     }
 
     #footer p {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
