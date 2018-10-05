@@ -309,7 +309,8 @@ ul {
 }
 
 .content-box.full h1 {
-    margin-bottom: 20px;
+    max-width: 560px;
+    margin: 0 auto 20px;
     font-size: 24px;
     font-size: 2.4rem;
     font-family: 'Fromage',serif;
